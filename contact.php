@@ -5,7 +5,7 @@ if(!empty($_POST["Email"])) {
 	$subject = $_POST["Subject"];
 	$content = $_POST["Message"];
 
-	$toEmail = "aliahidayah00@gmail.com";
+	$toEmail = "CB20157@student.ump.edu.my";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
 	if(mail($toEmail, $subject, $content, $mailHeaders)) {
 	    $message = "Your contact information is received successfully.";
